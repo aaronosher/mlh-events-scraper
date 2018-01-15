@@ -2,11 +2,10 @@
     "name": "mlh-events-scraper",
     "version": "1.0.0",
     "description": "A Utility for getting events from mlh.io",
-    "main": "dist/index.js",
+    "main": "lib/index.js",
     "scripts": {
-        "test": "npm run build && node dist/server.js test",
-        "build": "rimraf dist/ && babel src/ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
-        "start": "npm run build && node dist/index.js",
+        "build": "rimraf lib/ && babel src/ --out-dir lib/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+        "start": "npm run build && node lib/index.js",
         "docker": "docker-compose up --build"
     },
     "repository": {
