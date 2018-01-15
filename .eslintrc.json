@@ -18,7 +18,8 @@
         ],
         "quotes": [
             "error",
-            "double"
+            "single",
+            "avoid-escape"
         ],
         "semi": [
             "error",

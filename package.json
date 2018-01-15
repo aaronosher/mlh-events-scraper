@@ -2,7 +2,7 @@
     "name": "mlh-events-scraper",
     "version": "1.0.0",
     "description": "A Utility for getting events from mlh.io",
-    "main": "server.js",
+    "main": "dist/index.js",
     "scripts": {
         "test": "npm run build && node dist/server.js test",
         "build": "rimraf dist/ && babel src/ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
@@ -26,5 +26,9 @@
         "nodemon": "^1.12.1",
         "rimraf": "^2.6.2"
     },
-    "dependencies": {}
+    "dependencies": {
+        "cheerio": "^1.0.0-rc.2",
+        "request": "^2.83.0",
+        "request-promise": "^4.2.2"
+    }
 }
