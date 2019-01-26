@@ -10,7 +10,7 @@ function getEvents(locale) {
     return new Promise((resolve, reject) => {
 
         if(!sources[locale]) {
-            return rject('Invalid Locale')
+            return reject('Invalid Locale')
         }
 
         let options = {
