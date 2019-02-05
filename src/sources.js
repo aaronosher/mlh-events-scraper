@@ -1,6 +1,6 @@
 const urls = {
-    'eu': `https://mlh.io/seasons/eu-${(new Date).getFullYear()}/events`,
-    'na': `https://mlh.io/seasons/na-${(new Date).getFullYear()}/events`
+    'eu': 'https://mlh.io/eu',
+    'na': 'https://mlh.io/na'
 }
 
 export default urls

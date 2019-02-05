@@ -5,9 +5,9 @@ function proccessRequest(options) {
         .then(($) => {
             return new Promise((resolve, reject) => {
                 try {
-                    let events = [];
+                    let events = []
                     $('.event-wrapper').each((i, elem) => {
-                        let event = {};
+                        let event = {}
                         event.name = $(elem).find('h3[itemprop=name]').text()
                         event.url = $(elem).find('a.event-link').attr('href')
                         event.start = $(elem).find('meta[itemprop=startDate]').attr('content')
